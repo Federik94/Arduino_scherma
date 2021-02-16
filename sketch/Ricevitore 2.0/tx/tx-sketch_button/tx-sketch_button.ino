@@ -25,8 +25,9 @@ void loop()
   { 
       SentMessage[0] = 111;
       radio.write(SentMessage, 1); // manda il dato al arduino ricevitore
+      delay(5);
       Serial.println("tasto premuto");
-    delay(5);
+    
   }
   else 
   {
