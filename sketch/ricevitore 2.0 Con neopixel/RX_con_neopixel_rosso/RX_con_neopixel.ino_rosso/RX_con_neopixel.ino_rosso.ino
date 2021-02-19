@@ -14,7 +14,7 @@
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel (PIX, PIN, NEO_GRB + NEO_KHZ800); // settaggio la neopixel
 int ReceivedMessage[1] = {000}; // Used to store value received by the NRF24L01
 RF24 radio(7,8); // NRF24L01 SPI pins. Pin 9 and 10 on the Nano
-int buzzer = 12; // suono buzzer
+int buzzer = 5; // suono buzzer
 const uint64_t pipe = 0xE6E6E6E6E6E6; // Needs to be the same for communicating between 2 NRF24L01 
 
 void setup(void)
